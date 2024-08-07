@@ -322,7 +322,7 @@ pub struct Lesson {
 
     /// The teachers which are teaching this lesson.
     #[serde(rename = "te")]
-    pub teachers: Vec<IdItem>,
+    pub teachers: Option<Vec<IdItem>>,
 
     #[serde(default)]
     pub statflags: String,
